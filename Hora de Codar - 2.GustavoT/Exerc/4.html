@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 4</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <script>
+
+    let num1 = parseFloat(prompt("Usuário, digite um número"))
+    let num2 = parseFloat(prompt("Usuário, digite outro número"))
+    let num3 = parseFloat(prompt("Usuário, digite um último número"))
+    
+    let Maior, segundoMaior; //Utilizando let como variavel para que ela seja retribuida
+
+    if (num1 > num2 && num1 > num3) {
+        Maior = num1;                                   //Para que serve o ?
+        segundoMaior = num2 > num3 ? num2 : num3;       //Se valor2 for maior que valor3, então segundoMaior receberá valor2.
+                                                        //Caso contrário (ou seja, se valor3 for maior ou igual a valor2), segundoMaior receberá valor3.
+    } 
+    else if (num2 > num1 && num2 > num3) {
+        Maior = num2;
+        segundoMaior = num1 > num3 ? num1 : num3; 
+    } 
+    
+    else {
+        Maior = num3;
+        segundoMaior = num1 > num2 ? num1 : num2;
+    }
+
+    let somaDosMaior = maior + segundoMaior; // retribuição da let
+
+    console.log("A soma dos dois maiores valores é:", somaDosMaiores);
+
+    </script>
+
+</body>
+</html>

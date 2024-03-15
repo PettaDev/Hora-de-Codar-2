@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+    // Usuário -> colocar altura e sexo
+    var altura = parseFloat(prompt("Por favor, informe a sua altura em metros:"));
+    var sexo = parseInt(prompt("Por favor, informe o seu sexo (1 para feminino, 2 para masculino):"));
+
+    // Verificando se a pessoa é F ou M, e calculando o peso ideal de acordo com a fórmula:
+    var pesoIdeal; 
+        if (sexo === 1) { // Feminino - Igualdade Estrita -> compara dois valores para a igualdade
+        pesoIdeal = (62.1 * altura) - 44.7;
+        } 
+        else if (sexo === 2) { // Masculino - Igualdade Estrita -> compara dois valores para a igualdade
+        pesoIdeal = (72.7 * altura) - 58;
+        } 
+        else {
+        console.log("Opção inválida para sexo.");
+        }
+        // Peso ideal:
+        if (pesoIdeal) {
+        console.log("O peso ideal para uma pessoa com altura de " + altura.toFixed(2) + " metros é de " + pesoIdeal.toFixed(2) + " kg."); // tofixed(2) -> duas casas decimais se der muito grande.
+    }
+
+    </script>
+
+</body>
+</html>

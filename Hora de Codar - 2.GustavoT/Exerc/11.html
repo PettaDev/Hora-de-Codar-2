@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 11</title>
+</head>
+<body>
+    <script> 
+    const num1 = parseInt(prompt("Usuário, digite o primeiro valor"))
+    const num2 = parseInt(prompt("Usuário, digite o segundo valor"))
+    if (isNaN(num1) || isNaN(num2)) {
+      alert('Usuário, você digitou uma letra ao invés de um número')
+    }
+    else {
+        const calculator = prompt("Escolha a operação que queira fazer: (1 - Adição; 2 - Subtração; 3 - Divisão; 4 - Multiplicação)")
+
+        switch (calculator) {
+            case "1":
+                alert(`${num1} + ${num2} = ${num1 + num2}`) // $(num1) - para concatenação
+                break;                                      //break -  interromper a execução de um comando de repetição
+            case "2":
+                alert(`${num1} - ${num2} = ${num1 - num2}`)
+                break;
+            case "3":
+                alert(`${num1} ÷ ${num2} = ${num1 / num2}`)
+                break;
+                case "4":
+                    alert(`${num1} x ${num2} = ${num1 * num2}`)
+                    break;
+            default:                                        // permite que parâmetros formais sejam inicializados com valores padrão se nenhum valor ou valor undefined é passado.8
+                alert("Selecione uma operação válida!")
+                break;
+        }
+    }
+
+    </script>
+
+</body>
+</html>

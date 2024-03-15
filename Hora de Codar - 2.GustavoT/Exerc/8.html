@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 8</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <script>
+
+        let num1 = parseInt(prompt("Usuário, digite seu primeiro número: "))
+        let num2 = parseInt(prompt("Usuário, digite seu segundo número:"))
+        let num3 = parseInt(prompt("Usuário, digite seu terceiro número:"))
+        let num4 = parseInt(prompt("Usuário, digite seu quarto número:"))
+
+        let somaMedia = 0, quantidadeMedia, media;
+
+        if (isNaN(num1) || isNaN(num2) || isNaN(num3) || isNaN(num4)) {
+      alert('Usuário, você digitou uma letra no lugar de uma nota!')
+    }
+        
+        // calcular a média de quatro número, somente se forem 0 < x < 10
+
+        if (num1 > 0 && num1 < 10){
+            somaMedia += num1
+        }
+        if (num2 > 0 && num2 < 10){
+            somaMedia += num1
+        }
+        if (num3 > 0 && num3 < 10){
+            somaMedia += num1
+        }
+        if (num4 > 0 && num4 < 10){
+            somaMedia += num1
+        }
+
+        quantidadeMedia = 4;
+        media = somaMedia / quantidadeMedia;
+
+
+        // Se a média for maior que cinco, o usuário receberá "Você passou no teste" else "tente novamente".
+
+        if (media > 5){
+            alert("Você passou no teste, sua média foi: " + media)
+        }
+    
+        else {
+            alert("Você não passou no teste, sua média foi: " + media)
+        }
+
+    </script>
+
+</body>
+</html>

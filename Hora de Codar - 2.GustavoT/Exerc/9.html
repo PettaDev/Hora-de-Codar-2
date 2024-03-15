@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 9</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <script> 
+
+      let userAno = prompt("Usuário, digite o ano em que você nasceu")
+
+      if (isNaN(parseInt(userAno)) || userAno.length !== 4) {
+        alert('Usuário, você não digitou um ano válido!')
+      }
+
+      else {
+        userAno = parseInt(userAno)
+
+        const nowDate = new Date().getFullYear()
+
+        const calculateAge = nowDate - userAno
+
+        if (calculateAge >= 18) {
+          alert('Usuário, a partir desse ano, você é obrigado a votar!')
+        }
+
+        else{
+          alert('Usuário, você ainda não pode votar!')
+        }
+      }
+
+    </script>
+
+</body>
+</html>
